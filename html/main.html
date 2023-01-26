@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <!-- büyük yorum kutucuğu -->
+    <textarea></textarea>
+
+    <!--en üst kısım head, bilgilerin olduğu kısım body-->
+    <table>
+      <thead>
+        <tr>
+            <td>Name</td>
+            <td>Class</td>
+        </tr>       
+    </thead>  
+    <tbody>
+        <tr>
+            <td>Ali</td>
+            <td>12-B</td>
+        </tr>
+        <tr>
+            <td>Fatma</td>
+            <td>11-A</td>
+        </tr>
+    </tbody>    
+    </table>
+
+    <!-- geçişli yazı yapmaya yarar -->
+    <marquee> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, fuga?</marquee>
+    
+    <!-- iki aynı amaca yönelik. text, default type türüdür.  -->
+    <input type="text"> <br>
+    <input> <br>
+    <!-- renk kutucugu -->
+    <input type="color"><br>
+    <!-- dosya seçme kutucugu -->
+    <input type="file"><br>
+    <!-- numara yazıp, yükseltip azaltmaya yarayan kutucuk -->
+    <input type="number"><br>
+    <!-- gün,ay,yıl,saat,dakika yazma kutucugu -->
+    <input type="date-time local"><br>
+    <!-- yuvarlak check kutucugu -->
+    <input type="radio"><br>
+    <!-- kare check kutucugu -->
+    <input type="checkbox"><br>
+    <!-- sifre yazma kutucugu -->
+    <input type="password">
+
+    <!-- seçenek kutucugu -->
+    <div>
+        <select>
+            <option value="istanbul">İstanbul</option>
+            <option value="izmir">İzmir</option>
+            <option value="ankara">Ankara</option>
+        </select>   
+    </div> 
+    
+    <!-- button kutusu -->
+    <button>Click me!</button>
+
+        <!-- Renkli yazı yazma, class'ı her tag'in içine yazabiliriz. -->
+        <h3 class="this-red-one">This one is red.</h3>
+        <h3 class="this-blue-one">This one is blue.</h3>
+        <div class="this-red-one">This is also red.</div>
+        <!-- iki class yan yana yazılabilir, boşluk yeterli. -->
+        <h3 class="this-red-one bolded">This is red and bold.</h3>
+
+        <!-- stilini olusturma -->
+        <style>
+        .this-red-one{
+            color:red;
+            text-decoration: none;
+        }
+        .this-blue-one{
+            color: blue;
+        }
+        .bolded{
+            font-weight: bold;
+        }
+        </style>
+
+        <!-- ID'ler sadece bir defa kullanılabilir, classlar ise birden fazla. -->
+        <h1 id="brand">My Site's Branding</h1>
+        <style>
+        #brand{
+            color:chartreuse;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        </style>
+
+        <!-- resim üzerinden link tıklama -->
+        <a href="https://supermario-game.com/tr">
+            <h1 class="this-red-one bolded">Mario Oyunu</h1>
+            <img src="images//i.webp">
+        </a>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="/news" class="nav-link">News Feed</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="/about" class="nav-link">About</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>  
+
+        
+</body>
+</html>  

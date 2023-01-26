@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Box Models</title>
+</head>
+<body>
+
+<!-- sola sıralama = left, saga sıralama = right -->
+    <style>
+    .box-1{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: blue;
+        height: 150px;
+        width: 300px;
+    }
+    .box-2{
+        border: 1px solid black;
+        color:#ffff;
+        background-color: red;
+        height: 100px;
+        width: 300px;
+    }
+    .box-3{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: green;
+        height: 200px;
+        width: 100px;
+    }
+    .floated div{
+        float: left;
+    }
+    </style>
+    <div class="floated">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>   
+    </div>
+
+
+<!-- bir kutunun içne sıralama  -->
+    <style>
+    .box-1{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: blue;
+        height: 150px;
+        width: 300px;
+    }
+    .box-2{
+        border: 1px solid black;
+        color:#ffff;
+        background-color: red;
+        height: 100px;
+        width: 300px;
+    }
+    .box-3{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: green;
+        height: 200px;
+        width: 100px;
+    }
+    .flex-container{
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+    }
+    </style>
+    <div class="flex-container">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>   
+    </div>
+
+
+<!-- ters sıralama -->
+    <style>
+    .box-1{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: blue;
+        height: 150px;
+        width: 300px;
+    }
+    .box-2{
+        border: 1px solid black;
+        color:#ffff;
+        background-color: red;
+        height: 100px;
+        width: 300px;
+    }
+    .box-3{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: green;
+        height: 200px;
+        width: 100px;
+    }
+    .flex-container{
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .reverse{
+       flex-direction: row-reverse;
+    }
+    </style>
+    <div class="flex-container reverse">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>   
+    </div>
+
+<!-- sütun şeklinde alt alta -->
+    <style>
+    .box-1{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: blue;
+        height: 150px;
+        width: 300px;
+    }
+    .box-2{
+        border: 1px solid black;
+        color:#ffff;
+        background-color: red;
+        height: 100px;
+        width: 300px;
+    }
+    .box-3{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: green;
+        height: 200px;
+        width: 100px;
+    }
+    .flex-container{
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .column{
+        flex-direction: column;
+    }
+    </style>
+        <div class="flex-container column">
+            <div class="box-1">1</div>
+            <div class="box-2">2</div>
+            <div class="box-3">3</div>   
+        </div>
+
+
+<!-- sola dayalı ama kutular sıralı  -->
+    <style>
+    .box-1{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: blue;
+        height: 150px;
+        width: 300px;
+    }
+    .box-2{
+        border: 1px solid black;
+        color:#ffff;
+        background-color: red;
+        height: 100px;
+        width: 300px;
+    }
+    .box-3{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: green;
+        height: 200px;
+        width: 100px;
+    }
+    .flex-container{
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .jc-right{
+        justify-content: flex-end;
+        flex-direction: column;
+        height: 1000px; 
+    } 
+    </style>
+<!-- colum alt alt sıralamaya, height da aşağıya doğru kaydırmaya yarar. 
+     ama flex endi silersek height aşağıya kaydırma özelliğini kaybeder. -->
+        <div class="flex-container jc-right">
+            <div class="box-1">1</div>
+            <div class="box-2">2</div>
+            <div class="box-3">3</div>   
+        </div>
+
+
+<!-- center = ortalar, space-around = aralarına boşluk koyar. -->
+    <style>
+    .box-1{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: blue;
+        height: 150px;
+        width: 300px;
+    }
+    .box-2{
+        border: 1px solid black;
+        color:#ffff;
+        background-color: red;
+        height: 100px;
+        width: 300px;
+    }
+    .box-3{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: green;
+        height: 200px;
+        width: 100px;
+    }
+    .flex-container{
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .jc-center{
+        justify-content: center;
+    }
+    </style>
+    <div class="flex-container jc-center">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>   
+    </div>
+
+
+    <!-- flexend her şeyi aşağıya çeker, center her şeyi ortalar, 
+    strecth yüksekliği yok eder her şeyi aynı yükksekliğe getirir  
+    height: inherit; de aynı işe yarar. -->
+    <style>
+    .box-1{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: blue;
+        height: 150px;
+        width: 300px;
+        }
+    .box-2{
+        border: 1px solid black;
+        color:#ffff;
+        background-color: red;
+        height: 100px;
+        width: 300px;
+    }
+    .box-3{
+        border: 1px solid black;
+        color: #ffff;
+        background-color: green;
+        height: 200px;
+        width: 100px;
+    }
+    .flex-container{
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .ai-fe{
+        align-items: flex-end;
+    }
+    </style>
+    <div class="flex-container ai-fe">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>   
+    </div>
+
+
+<!-- kutu büyükülüğü ayarlama -->
+    <style>
+    .ai-grow .box-1{
+        flex-grow: 1;
+        width: 0;
+    }
+    .ai-grow .box-2{
+        flex-grow: 5;
+        width: 0;
+    }
+    .ai-grow .box-3{
+        flex-grow: 10;
+        width: 0;
+    }
+    </style>
+    <div class="flex-container ai-grow">
+        <div class="box-1">1</div>
+        <div class="box-2">5</div>
+        <div class="box-3">10</div>
+    </div>
+
+<!-- birkaç classları içinde barındıran kutular -->
+    <div class="flex-container ai-grow reverse jc-sa">
+        <div class="box-1">1</div>
+        <div class="box-2">5</div>
+        <div class="box-3">10</div>
+    </div>
+
+    <div class="flex-container ai-fe column">
+        <div class="box-1">1</div>
+        <div class="box-2">5</div>
+        <div class="box-3">10</div>
+    </div>
+</body>
+</html>

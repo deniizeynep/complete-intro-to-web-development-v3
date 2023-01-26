@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Örnek</title>
+</head>
+<body>
+
+    <!-- icerik koyma -->
+    <div class="chapter">This is a chapter of my book</div>
+
+    <div class="chapter">This is a second chapter of my book</div>
+
+    <style>
+    .chapter p{
+        margin: 0;
+    }
+    .chapter::after{
+        content: "&";
+        font-size: 50px;
+        text-align: center;
+        display: block;
+    }
+    </style>
+</body>
+</html>

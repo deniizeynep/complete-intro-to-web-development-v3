@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Örnek</title>
+</head>
+<body>
+    <!-- üzerine gelince değişen kutu yapımı -->
+    <style>
+    .hover-example{
+        width:100px;
+        height: 100px;
+        background-color: limegreen;
+        color: #ffff;
+    }
+    .hover-example:hover{
+        background-color: crimson;
+        width: 150px;
+        height: 150px;
+    }
+    </style>
+    <div class="hover-example">Hover your mouse over me </div>
+
+    <!-- öncelik tanıma -->
+    <style>
+    .first-child-example{
+        color:crimson;
+        border-bottom: 1px solid black;
+        padding-bottom: 50px;
+    }
+    .first-child-example:nth-child(-n+2){
+        color: limegreen;   
+        border-bottom: none;
+    }
+    </style>    
+    <ol>
+        
+        <li class="first-child-example">First</li>
+        <li class="first-child-example">Second</li>
+        <li class="first-child-example">Third</li>
+        <li class="first-child-example">Fourth</li>
+    </ol>
+</body>
+</html>

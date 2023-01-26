@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+</head>
+<body>
+    <!-- grid kullanımı -->
+    <style>
+    .my-page-header{
+        grid-area: nav-header;
+        background-color: red;
+        padding: 10px;
+    }
+    .my-page-body{
+        grid-area: main-body;
+        background-color: blue;
+        padding: 10px;
+    }
+    .my-page-sidebar{
+        grid-area: nav-side;
+        background-color: green;
+        padding: 10px;
+    }
+    .my-page-footer{
+        grid-area: footer;
+        background-color: yellow;
+        padding: 10px;
+    }
+    .my-page{
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+        grid-template-areas: 
+        "nav-header nav-header nav-header nav-side"
+        "main-body main-body   .    nav-side"
+        "footer   footer   footer  footer";
+    }
+    </style>
+    <div class="my-page">
+        <header class="my-page-header">the header</header>
+        <div class="my-page-body">the body</div>
+        <div class="my-page-sidebar">the sidebar</div>
+        <footer class="my-page-footer">the footer</footer>
+    </div>
+
+    <div id="birinci" class="test2"></div>
+    <div id="birinci" class="text2"></div>
+</body>
+</html>
