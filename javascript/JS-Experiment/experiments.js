@@ -15,3 +15,8 @@ console.log(answer);
 //for'la aynı görevi görür
 
 //"🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬"
+
+let string = "hi my name is Brian";
+string = string.substring(3);
+
+console.log(string);
